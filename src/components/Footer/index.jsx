@@ -3,9 +3,8 @@ import './Footer.less'
 
 export const Footer = () => {
     return (
-        <div className='block'>
-            <div>lfsngs</div>
-            <div>dgadgag</div>
-        </div>
+        <section className="footer-section">
+
+        </section>
     )
 }
