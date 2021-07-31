@@ -64,9 +64,9 @@ export const Footer = () => {
                         </ul>
                     </div>
                     {/* 3 */}
-                    <div className='footer-03'>
-                        <h2 className='footer-04'>More ways to shop</h2>
-                        <span>
+                    <div className='footer-003'>
+                        <h2 className='footer-004'>More ways to shop</h2>
+                        <span className='footer-005'>
                             <img className='footer-05' src={google} alt="" />
                             <img className='footer-06' src={apple} alt="" />
                         </span>
@@ -75,20 +75,25 @@ export const Footer = () => {
                             <Tag className='footer-09' icon={<FacebookOutlined />} color="#3b5999">
                                 Facebook
                             </Tag>
+                            <Tag className='footer-011' icon={<TwitterOutlined />} color="#55acee">
+                                Twitter
+                            </Tag>
                             <Tag className='footer-010' icon={<InstagramOutlined />} color="#cd201f">
                                 Instagram
                             </Tag>
-                            <Tag className='footer-011  ' icon={<TwitterOutlined />} color="#55acee">
-                                Twitter
-                            </Tag>
                             
                             
-                            <Tag className='footer-02' icon={<GoogleOutlined />} color="#55acee">
+                            
+                            <Tag className='footer-012' icon={<GoogleOutlined />} color="#55acee">
                                 Google
                             </Tag>
                         </div>
                         
                     </div>
+                </div>
+                {/* copyright  */}
+                <div className='footer-copyright'>
+                    © 2021  Mumzworld - Online Baby Shop . All Rights Reserved.
                 </div>
             </div>
         </footer>
