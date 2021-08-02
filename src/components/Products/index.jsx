@@ -12,8 +12,7 @@ import lol from "./images/lol.png";
 import lego from "./images/lego.png";
 import viga from "./images/viga.jpg";
 import "./Products.less";
-
-import { Menu, Dropdown } from "antd";
+import { Menu, Dropdown, Button } from "antd";
 
 const clothes = (
   <Menu style={{ display: "flex", justifyContent: "space-between" }}>
@@ -156,13 +155,6 @@ const toys = (
     </div>
   </Menu>
 );
-const sale = (
-  <Menu>
-    <Menu.Item key="1">Clicking me will not close the menu.</Menu.Item>
-    <Menu.Item key="2">Clicking me will not close the menu also.</Menu.Item>
-    <Menu.Item key="3">Clicking me will close the menu.</Menu.Item>
-  </Menu>
-);
 
 export const Products = () => {
   return (
@@ -194,15 +186,13 @@ export const Products = () => {
           TOYS
         </a>
       </Dropdown>
-      <Dropdown overlay={sale}>
-        <a
-          className="ant-dropdown-link"
-          style={{ color: "red" }}
-          onClick={(e) => e.preventDefault()}
-        >
-          SALE
-        </a>
-      </Dropdown>
+      <Button
+        danger
+        type="text"
+        style={{ fontFamily: "Poppins", fontSize: " 24px", marginTop: "20px" }}
+      >
+        SALE
+      </Button>
     </div>
   );
 };

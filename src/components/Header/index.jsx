@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./images/delivery.png";
+import img from "./images/delivery.svg";
 import { CheckCircleOutlined, GlobalOutlined } from "@ant-design/icons";
 import { Select, Tooltip } from "antd";
 import "./Header.less";
@@ -16,19 +16,24 @@ export const Header = () => {
               src={img}
               alt="delivery icon"
               style={{
-                width: "35px",
-                height: "25px",
+                width: "45px",
+                height: "40px",
                 marginLeft: "50px",
                 marginRight: "5px",
+                marginTop: "20px",
               }}
             />
-            <h3>Free delivery</h3>
+            <h3 style={{ marginTop: "35px" }}>Free delivery</h3>
           </div>
         </Tooltip>
         <Tooltip title="The Best prices in the town">
           <div className="price">
             <CheckCircleOutlined
-              style={{ marginLeft: "10px", marginRight: "5px" }}
+              style={{
+                marginLeft: "10px",
+                marginRight: "5px",
+                fontSize: "150%",
+              }}
             />
             <h3>Best Prices Everyday</h3>
           </div>
@@ -37,13 +42,13 @@ export const Header = () => {
 
       <div className="second">
         <div className="lang">
-          <GlobalOutlined />
+          <GlobalOutlined style={{ fontSize: "150%" }} />
           <h3>EN</h3>
         </div>
         <div className="currency">
           <Select
             defaultValue="Country"
-            style={{ width: 100, marginLeft: "10px" }}
+            style={{ width: 150, marginLeft: "10px" }}
             bordered={false}
           >
             <Option value="KG">KG</Option>
@@ -51,7 +56,7 @@ export const Header = () => {
           </Select>
           <Select
             defaultValue="Currency"
-            style={{ width: 100 }}
+            style={{ width: 150 }}
             bordered={false}
           >
             <Option value="Som">Som</Option>
