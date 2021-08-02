@@ -3,15 +3,8 @@ import { Input } from "antd";
 import { Icon } from "@ant-design/compatible";
 import img from "./images/kids.png";
 import "./SearchPart.less";
-import styled from "styled-components";
 
 const Search = Input.Search;
-
-// const Title = styled.h1`
-//   font-size: 2.5em;
-//   text-align: center;
-//   color: #3fa5ee;
-// `;
 
 export const SearchPart = () => {
   return (
