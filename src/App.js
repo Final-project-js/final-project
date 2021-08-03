@@ -1,13 +1,13 @@
 
 import './App.less';
-import { Content } from './components/Content';
-// import { Footer } from './components/Footer';
+// import { Content } from './components/Content';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Content/>
-      {/* <Footer/> */}
+      {/* <Content/> */}
+      <Footer/>
     </div>
   );
 }
