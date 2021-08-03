@@ -8,7 +8,7 @@ import {  CheckCircleOutlined,  SyncOutlined,
         InstagramOutlined,
         FacebookOutlined,
         GoogleOutlined,} from '@ant-design/icons';
-import { Button } from 'antd';
+// import { Button } from 'antd';
 
 // photos
 import google from '../../assets/google.png'
@@ -97,7 +97,7 @@ export const Footer = () => {
                 </div>
                 {/* copyright  */}
                 <div className='footer-copyright'>
-                    © 2021  Mumzworld - Online Baby Shop . All Rights Reserved.
+                    © 2021  Snookums - Online Baby Shop . All Rights Reserved.
                 </div>
             </div>
         </footer>
