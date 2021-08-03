@@ -8,7 +8,7 @@ import {  CheckCircleOutlined,  SyncOutlined,
         InstagramOutlined,
         FacebookOutlined,
         GoogleOutlined,} from '@ant-design/icons';
-import { Button } from 'antd';
+// import { Button } from 'antd';
 
 // photos
 import google from '../../assets/google.png'

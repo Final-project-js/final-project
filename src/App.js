@@ -1,11 +1,13 @@
 
 import './App.less';
-import { Footer } from './components/Footer';
+import { Content } from './components/Content';
+// import { Footer } from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <Footer/>
+      <Content/>
+      {/* <Footer/> */}
     </div>
   );
 }
