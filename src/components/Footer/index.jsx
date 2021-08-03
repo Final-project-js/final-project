@@ -97,7 +97,7 @@ export const Footer = () => {
                 </div>
                 {/* copyright  */}
                 <div className='footer-copyright'>
-                    © 2021  Mumzworld - Online Baby Shop . All Rights Reserved.
+                    © 2021  Snookums - Online Baby Shop . All Rights Reserved.
                 </div>
             </div>
         </footer>
