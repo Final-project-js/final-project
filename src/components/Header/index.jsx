@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import img from "./images/delivery.svg";
 import { CheckCircleOutlined, GlobalOutlined } from "@ant-design/icons";
-import { Select, Tooltip } from "antd";
+import { Select, Tooltip, Modal, Button } from "antd";
 import "./Header.less";
 
 const Option = Select.Option;
 
 export const Header = () => {
+  const [isModalVisible, setIsModalVisible] = useState(false);
+
+  const showModal = () => {
+    setIsModalVisible(true);
+  };
+
+  const handleOk = () => {
+    setIsModalVisible(false);
+  };
+
+  const handleCancel = () => {
+    setIsModalVisible(false);
+  };
   return (
     <header className="header">
       <div className="first">
@@ -42,8 +55,9 @@ export const Header = () => {
 
       <div className="second">
         <div className="lang">
-          <GlobalOutlined style={{ fontSize: "150%" }} />
           <h3>EN</h3>
+          <GlobalOutlined style={{ fontSize: "150%" }} />
+          <h3>RU</h3>
         </div>
         <div className="currency">
           <Select
@@ -64,8 +78,40 @@ export const Header = () => {
           </Select>
         </div>
         <div className="register">
-          <span style={{ marginLeft: "10px" }}>SignIn</span>
-          <span style={{ marginRight: "50px", marginLeft: "5px" }}>LogIn</span>
+          <Button
+            type="text"
+            onClick={showModal}
+            style={{ marginLeft: "10px" }}
+          >
+            SignIn
+          </Button>
+          <Modal
+            title="Basic Modal"
+            visible={isModalVisible}
+            onOk={handleOk}
+            onCancel={handleCancel}
+          >
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+          </Modal>
+          <Button
+            type="text"
+            onClick={showModal}
+            style={{ marginLeft: "10px" }}
+          >
+            LogIn
+          </Button>
+          <Modal
+            title="Basic Modal"
+            visible={isModalVisible}
+            onOk={handleOk}
+            onCancel={handleCancel}
+          >
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+            <p>Some contents...</p>
+          </Modal>
         </div>
       </div>
     </header>
