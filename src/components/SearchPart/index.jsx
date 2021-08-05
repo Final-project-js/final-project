@@ -28,7 +28,7 @@ export const SearchPart = () => {
       /> */}
       <Space direction="vertical">
         <Search
-          placeholder="input search text"
+          placeholder="What can we help you find?"
           enterButton="Search"
           size="large"
           suffix={suffix}

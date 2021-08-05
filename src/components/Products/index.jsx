@@ -166,7 +166,7 @@ export const Products = () => {
           style={{ color: "#3fa5ee" }}
           onClick={(e) => e.preventDefault()}
         >
-          CLOTHS
+          CLOTHES
         </a>
       </Dropdown>
       <Dropdown overlay={diapers}>
