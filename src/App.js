@@ -1,6 +1,15 @@
+<<<<<<< HEAD
 import { routes } from "./routes.js";
 import { BrowserRouter, Switch } from "react-router-dom";
+=======
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { SearchPart } from "./components/SearchPart";
+import { Products } from "./components/Products";
+>>>>>>> 0b651c0b6317a855658a09d023e7d8b1bacd6893
 import "./App.less";
+// import Splide from "./components/TopCateg";
+import { TopCateg } from "./components/TopCateg";
 
 //layouts
 import { MainLayout } from "./layouts/MainLayout/index.jsx";
@@ -37,6 +46,7 @@ import { Sale } from "./pages/Sale";
 function App() {
   return (
     <div className="App">
+<<<<<<< HEAD
       <BrowserRouter>
         <Switch>
           <SectionLayout path={routes.baby_clothes} component={Sections} />
@@ -67,6 +77,14 @@ function App() {
       <SearchPart />
       <Products />
       <Footer /> */}
+=======
+       <Header />
+      <SearchPart />
+      <Products /> 
+      <TopCateg/>
+      {/* <Splide/>  */}
+       <Footer />
+>>>>>>> 0b651c0b6317a855658a09d023e7d8b1bacd6893
     </div>
   );
 }

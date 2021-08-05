@@ -70,12 +70,10 @@ export const Footer = () => {
                             <img className='footer-05' src={google} alt="" />
                             <img className='footer-06' src={apple} alt="" />
                         </span>
-                        
-                        
                     </div>
                     {/* 4 */}
                     <div className='footer-0001'>
-                    <h3 className='footer-07'>Get to know us</h3>
+                        <h3 className='footer-07'>Get to know us</h3>
                         <div className='footer-08'>
                             <Tag className='footer-09' icon={<FacebookOutlined />} color="#3b5999">
                                 Facebook
