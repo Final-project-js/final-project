@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { routes } from "../../routes";
 import pic from "./images/baby.png";
 import pic1 from "./images/logo.png";
 import pic2 from "./images/logo1.png";
@@ -23,27 +25,47 @@ const clothes = (
       >
         Baby clothes (0-2)
       </Menu.Item>
-      <Menu.Item key="2">Bodysuits</Menu.Item>
-      <Menu.Item key="3">Sleepwear</Menu.Item>
-      <Menu.Item key="3">Swimwear</Menu.Item>
+
+      <Menu.Item key="2">
+        <Link to={routes.baby_clothes}>Bodysuits</Link>
+      </Menu.Item>
+
+      <Menu.Item key="3">
+        <Link to={routes.baby_sleepingwear}>Sleepwear</Link>
+      </Menu.Item>
+      <Menu.Item key="3">
+        <Link to={routes.baby_swimwear}>Swimwear</Link>
+      </Menu.Item>
       <Menu.Item
         key="1"
         style={{ fontFamily: "Poppins", fontWeight: 100, color: "#3fa5ee" }}
       >
         Girls Clothes (3-12)
       </Menu.Item>
-      <Menu.Item key="2">Tops</Menu.Item>
-      <Menu.Item key="3">Dresses</Menu.Item>
-      <Menu.Item key="3">Accessories</Menu.Item>
+      <Menu.Item key="2">
+        <Link to={routes.girls_dress}>Dresses</Link>
+      </Menu.Item>
+      <Menu.Item key="3">
+        <Link to={routes.girls_top}>Tops</Link>
+      </Menu.Item>
+      <Menu.Item key="3">
+        <Link to={routes.girls_acc}>Accessories</Link>
+      </Menu.Item>
       <Menu.Item
         key="1"
         style={{ fontFamily: "Poppins", fontWeight: 100, color: "#3fa5ee" }}
       >
         Boys clothes (3-12)
       </Menu.Item>
-      <Menu.Item key="2">Tops</Menu.Item>
-      <Menu.Item key="3">Bottoms</Menu.Item>
-      <Menu.Item key="3">Activewear</Menu.Item>
+      <Menu.Item key="2">
+        <Link to={routes.boys_top}>Tops</Link>{" "}
+      </Menu.Item>
+      <Menu.Item key="3">
+        <Link to={routes.boys_bottom}>Bottoms</Link>{" "}
+      </Menu.Item>
+      <Menu.Item key="3">
+        <Link to={routes.boys_activewear}>Activewear</Link>{" "}
+      </Menu.Item>
       <br />
       <Menu.Item
         key="1"
@@ -79,16 +101,24 @@ const diapers = (
       >
         Disposable Diapers
       </Menu.Item>
-      <Menu.Item key="2">Swim Diapers</Menu.Item>
-      <Menu.Item key="3">Reusable Diapers</Menu.Item>
+      <Menu.Item key="2">
+        <Link to={routes.swim_diaper}> Swim Diapers</Link>{" "}
+      </Menu.Item>
+      <Menu.Item key="3">
+        <Link to={routes.reusable_diaper}>Reusable Diapers</Link>{" "}
+      </Menu.Item>
       <Menu.Item
         key="1"
         style={{ fontFamily: "Poppins", fontWeight: 100, color: "#3fa5ee" }}
       >
         Creams & Powders
       </Menu.Item>
-      <Menu.Item key="2">Baby Powder</Menu.Item>
-      <Menu.Item key="3">Diaper Rash Creams</Menu.Item>
+      <Menu.Item key="2">
+        <Link to={routes.baby_powder}>Baby Powder</Link>{" "}
+      </Menu.Item>
+      <Menu.Item key="3">
+        <Link to={routes.baby_cream}>Diaper Rash Creams</Link>{" "}
+      </Menu.Item>
       <Menu.Item
         key="1"
         style={{ fontFamily: "Poppins", fontWeight: 100, color: "cadetblue" }}
@@ -118,27 +148,25 @@ const toys = (
       >
         Dolls
       </Menu.Item>
-      <Menu.Item key="2">Fashion Dolls</Menu.Item>
-      <Menu.Item key="3">Baby Dolls & Prams</Menu.Item>
+      <Menu.Item key="2">
+        <Link to={routes.fashion_dolls}> Fashion Dolls</Link>
+      </Menu.Item>
+      <Menu.Item key="3">
+        <Link to={routes.baby_parms}>Baby Dolls & Prams</Link>{" "}
+      </Menu.Item>
       <Menu.Item
-        key="2"
+        key="4"
         style={{ fontFamily: "Poppins", fontWeight: 100, color: "#3fa5ee" }}
       >
         Action Toys
       </Menu.Item>
-      <Menu.Item key="2">Action Figures</Menu.Item>
+      <Menu.Item key="2">
+        <Link to={routes.action_toy}>Action Figures</Link>{" "}
+      </Menu.Item>
       <Menu.Item key="3">Play Sets</Menu.Item>
       <Menu.Item
         key="3"
         style={{ fontFamily: "Poppins", fontWeight: 100, color: "#3fa5ee" }}
-      >
-        Plush & Soft Toys
-      </Menu.Item>
-      <Menu.Item key="2">Puppets</Menu.Item>
-      <Menu.Item key="3">Interactive</Menu.Item>
-      <Menu.Item
-        key="1"
-        style={{ fontFamily: "Poppins", fontWeight: 100, color: "cadetblue" }}
       >
         Popular Brands
       </Menu.Item>
@@ -192,7 +220,7 @@ export const Products = () => {
         type="text"
         style={{ fontFamily: "Poppins", fontSize: " 24px", marginTop: "20px" }}
       >
-        SALE
+        <Link to={routes.sale_items}> SALE</Link>
       </Button>
     </div>
   );
