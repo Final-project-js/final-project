@@ -8,11 +8,11 @@ import { TopCateg } from "./components/TopCateg";
 function App() {
   return (
     <div className="App">
-       <Header />
-      <SearchPart />
-      <Products /> 
-      <TopCateg/>
-       <Footer />
+        <Header />
+        <SearchPart />
+        <Products /> 
+        <TopCateg/>
+        <Footer />
     </div>
   );
 }
