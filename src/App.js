@@ -4,6 +4,8 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { SearchPart } from "./components/SearchPart";
 import { Products } from "./components/Products";
+import { BrowserRouter, Route, Switch,  } from "react-router-dom";
+
 
 import "./App.less";
 
@@ -40,19 +42,21 @@ import { BabyParms } from "./pages/BabyParms";
 import { ActionToy } from "./pages/ActionToy";
 import { Dolls } from "./pages/Dolls/index.jsx";
 import { Sale } from "./pages/Sale";
+import { routes } from "./routes";
 
 function App() {
   return (
     <div className="App">
 
-        <Header />
+        {/* <Header />
         <SearchPart />
         <Products /> 
         <TopCateg/>
-        <Footer />
+        <Footer /> */}
 
       <BrowserRouter>
         <Switch>
+          <Route>
           <SectionLayout path={routes.baby_clothes} component={Sections} />
           <SectionLayout path={routes.baby_sleepingwear} component={BabyWear} />
           <SectionLayout path={routes.baby_swimwear} component={BabySwimWear} />
@@ -75,6 +79,7 @@ function App() {
           />
 
           <MainLayout path={routes.home} component={Home} />
+          </Route>
         </Switch>
       </BrowserRouter>
       {/* <Header />
