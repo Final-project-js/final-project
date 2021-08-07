@@ -1,12 +1,9 @@
-<<<<<<< HEAD
 import { routes } from "./routes.js";
 import { BrowserRouter, Switch } from "react-router-dom";
-=======
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { SearchPart } from "./components/SearchPart";
-import { Products } from "./components/Products";
->>>>>>> 0b651c0b6317a855658a09d023e7d8b1bacd6893
+// import { Header } from "./components/Header";
+// import { Footer } from "./components/Footer";
+// import { SearchPart } from "./components/SearchPart";
+// import { Products } from "./components/Products";
 import "./App.less";
 // import Splide from "./components/TopCateg";
 import { TopCateg } from "./components/TopCateg";
@@ -46,7 +43,12 @@ import { Sale } from "./pages/Sale";
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
+      {/* <Header />
+      <SearchPart />
+      <Products />
+      <TopCateg />
+      {/* <Splide/>  */}
+      {/* <Footer /> */}
       <BrowserRouter>
         <Switch>
           <SectionLayout path={routes.baby_clothes} component={Sections} />
@@ -59,32 +61,19 @@ function App() {
           <SectionLayout path={routes.boys_bottom} component={BoysBottoms} />
           <SectionLayout path={routes.boys_activewear} component={BoysWear} />
           <SectionLayout path={routes.swim_diaper} component={SwimDiaper} />
+          <SectionLayout
+            path={routes.reusable_diaper}
+            component={ReusableDiaper}
+          />
           <SectionLayout path={routes.baby_powder} component={PowerBaby} />
           <SectionLayout path={routes.baby_cream} component={BabyRushCream} />
           <SectionLayout path={routes.fashion_dolls} component={Dolls} />
           <SectionLayout path={routes.baby_parms} component={BabyParms} />
           <SectionLayout path={routes.action_toy} component={ActionToy} />
           <SectionLayout path={routes.sale_items} component={Sale} />
-          <SectionLayout
-            path={routes.reusable_diaper}
-            component={ReusableDiaper}
-          />
-
           <MainLayout path={routes.home} component={Home} />
         </Switch>
       </BrowserRouter>
-      {/* <Header />
-      <SearchPart />
-      <Products />
-      <Footer /> */}
-=======
-       <Header />
-      <SearchPart />
-      <Products /> 
-      <TopCateg/>
-      {/* <Splide/>  */}
-       <Footer />
->>>>>>> 0b651c0b6317a855658a09d023e7d8b1bacd6893
     </div>
   );
 }

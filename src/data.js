@@ -1,111 +1,111 @@
 import { HeartOutlined } from "@ant-design/icons";
 //baby pictures
 
-import img1 from "./images/1.jpg";
-import img2 from "./images/2.jpg";
-import img3 from "./images/3.jpg";
-import img4 from "./images/4.jpg";
-import img5 from "./images/5.jpg";
-import img6 from "./images/6.jpg";
+import img1 from "../src/assets/images/1.jpg";
+import img2 from "../src/assets/images/2.jpg";
+import img3 from "../src/assets/images/3.jpg";
+import img4 from "../src/assets/images/4.jpg";
+import img5 from "../src/assets/images/5.jpg";
+import img6 from "../src/assets/images/6.jpg";
 
-import s1 from "./images/s1.jpg";
-import s2 from "./images/s2.jpg";
-import s3 from "./images/s3.jpg";
-import s4 from "./images/s4.jpg";
-import s5 from "./images/s5.jpg";
-import s6 from "./images/s6.jpg";
+import s1 from "../src/assets/images/s1.jpg";
+import s2 from "../src/assets/images/s2.jpg";
+import s3 from "../src/assets/images/s3.jpg";
+import s4 from "../src/assets/images/s4.jpg";
+import s5 from "../src/assets/images/s5.jpg";
+import s6 from "../src/assets/images/s6.jpg";
 
-import sw1 from "./images/sw1.jpg";
-import sw2 from "./images/sw2.jpg";
-import sw3 from "./images/sw3.jpg";
-import sw4 from "./images/sw4.jpg";
-import sw5 from "./images/sw5.jpg";
-import sw6 from "./images/sw6.jpg";
+import sw1 from "../src/assets/images/sw1.jpg";
+import sw2 from "../src/assets/images/sw2.jpg";
+import sw3 from "../src/assets/images/sw3.jpg";
+import sw4 from "../src/assets/images/sw4.jpg";
+import sw5 from "../src/assets/images/sw5.jpg";
+import sw6 from "../src/assets/images/sw6.jpg";
 
 //girls picturs
 
-import d1 from "./images/d1.jpg";
-import d2 from "./images/d2.jpg";
-import d3 from "./images/d3.jpg";
-import d4 from "./images/d4.jpg";
-import d5 from "./images/d5.jpg";
-import d6 from "./images/d6.jpg";
+import d1 from "../src/assets/images/d1.jpg";
+import d2 from "../src/assets/images/d2.jpg";
+import d3 from "../src/assets/images/d3.jpg";
+import d4 from "../src/assets/images/d4.jpg";
+import d5 from "../src/assets/images/d5.jpg";
+import d6 from "../src/assets/images/d6.jpg";
 
-import t1 from "./images/t1.jpg";
-import t2 from "./images/t2.jpg";
-import t3 from "./images/t3.jpg";
-import t4 from "./images/t4.jpg";
-import t5 from "./images/t5.jpg";
-import t6 from "./images/t6.jpg";
+import t1 from "../src/assets/images/t1.jpg";
+import t2 from "../src/assets/images/t2.jpg";
+import t3 from "../src/assets/images/t3.jpg";
+import t4 from "../src/assets/images/t4.jpg";
+import t5 from "../src/assets/images/t5.jpg";
+import t6 from "../src/assets/images/t6.jpg";
 
-import a1 from "./images/a1.jpg";
-import a2 from "./images/a2.jpg";
-import a3 from "./images/a3.jpg";
-import a4 from "./images/a4.jpg";
-import a5 from "./images/a5.jpg";
-import a6 from "./images/a6.jpg";
+import a1 from "../src/assets/images/a1.jpg";
+import a2 from "../src/assets/images/a2.jpg";
+import a3 from "../src/assets/images/a3.jpg";
+import a4 from "../src/assets/images/a4.jpg";
+import a5 from "../src/assets/images/a5.jpg";
+import a6 from "../src/assets/images/a6.jpg";
 
 //boys
 
-import b1 from "./images/b1.jpg";
-import b2 from "./images/b2.jpg";
-import b3 from "./images/b3.jpg";
-import b4 from "./images/b4.jpg";
-import b5 from "./images/b5.jpg";
-import b6 from "./images/b6.jpg";
+import b1 from "../src/assets/images/b1.jpg";
+import b2 from "../src/assets/images/b2.jpg";
+import b3 from "../src/assets/images/b3.jpg";
+import b4 from "../src/assets/images/b4.jpg";
+import b5 from "../src/assets/images/b5.jpg";
+import b6 from "../src/assets/images/b6.jpg";
 
-import bt1 from "./images/bt1.jpg";
-import bt2 from "./images/bt2.jpg";
-import bt3 from "./images/bt3.jpg";
-import bt4 from "./images/bt4.jpg";
-import bt5 from "./images/bt5.jpg";
-import bt6 from "./images/bt6.jpg";
+import bt1 from "../src/assets/images/bt1.jpg";
+import bt2 from "../src/assets/images/bt2.jpg";
+import bt3 from "../src/assets/images/bt3.jpg";
+import bt4 from "../src/assets/images/bt4.jpg";
+import bt5 from "../src/assets/images/bt5.jpg";
+import bt6 from "../src/assets/images/bt6.jpg";
 
-import ac1 from "./images/ac1.jpg";
-import ac2 from "./images/ac2.jpg";
-import ac3 from "./images/ac3.jpg";
-import ac4 from "./images/ac4.jpg";
-import ac5 from "./images/ac5.jpg";
-import ac6 from "./images/ac6.jpg";
+import ac1 from "../src/assets/images/ac1.jpg";
+import ac2 from "../src/assets/images/ac2.jpg";
+import ac3 from "../src/assets/images/ac3.jpg";
+import ac4 from "../src/assets/images/ac4.jpg";
+import ac5 from "../src/assets/images/ac5.jpg";
+import ac6 from "../src/assets/images/ac6.jpg";
 
 //swim diapers
 
-import dw1 from "./images/dw1.jpg";
-import dw2 from "./images/dw2.jpg";
-import dw3 from "./images/dw3.jpg";
+import dw1 from "../src/assets/images/dw1.jpg";
+import dw2 from "../src/assets/images/dw2.jpg";
+import dw3 from "../src/assets/images/dw3.jpg";
 
-import r1 from "./images/r1.jpg";
-import r2 from "./images/r2.jpg";
-import r3 from "./images/r3.jpg";
+import r1 from "../src/assets/images/r1.jpg";
+import r2 from "../src/assets/images/r2.jpg";
+import r3 from "../src/assets/images/r3.jpg";
 
-import p1 from "./images/p1.jpg";
-import p2 from "./images/p2.jpg";
-import p3 from "./images/p3.jpg";
+import p1 from "../src/assets/images/p1.jpg";
+import p2 from "../src/assets/images/p2.jpg";
+import p3 from "../src/assets/images/p3.jpg";
 
-import c1 from "./images/c1.jpg";
-import c2 from "./images/c2.jpg";
-import c3 from "./images/c3.jpg";
+import c1 from "../src/assets/images/c1.jpg";
+import c2 from "../src/assets/images/c2.jpg";
+import c3 from "../src/assets/images/c3.jpg";
 
 // Toys
 
-import fd1 from "./images/fd1.jpg";
-import fd2 from "./images/fd2.jpg";
-import fd3 from "./images/fd3.jpg";
+import fd1 from "../src/assets/images/fd1.jpg";
+import fd2 from "../src/assets/images/fd2.jpg";
+import fd3 from "../src/assets/images/fd3.jpg";
 
-import st1 from "./images/st1.jpg";
-import st2 from "./images/st2.jpg";
-import st3 from "./images/st3.jpg";
+import st1 from "../src/assets/images/st1.jpg";
+import st2 from "../src/assets/images/st2.jpg";
+import st3 from "../src/assets/images/st3.jpg";
 
-import at1 from "./images/at1.jpg";
-import at2 from "./images/at2.jpg";
-import at3 from "./images/at3.jpg";
+import at1 from "../src/assets/images/at1.jpg";
+import at2 from "../src/assets/images/at2.jpg";
+import at3 from "../src/assets/images/at3.jpg";
 
-import sale1 from "./images/sale1.jpg";
-import sale2 from "./images/sale2.jpg";
-import sale3 from "./images/sale3.jpg";
-import sale4 from "./images/sale4.jpg";
-import sale5 from "./images/sale5.jpg";
-import sale6 from "./images/sale6.jpg";
+import sale1 from "../src/assets/images/sale1.jpg";
+import sale2 from "../src/assets/images/sale2.jpg";
+import sale3 from "../src/assets/images/sale3.jpg";
+import sale4 from "../src/assets/images/sale4.jpg";
+import sale5 from "../src/assets/images/sale5.jpg";
+import sale6 from "../src/assets/images/sale6.jpg";
 
 export const babyClothes = [
   {

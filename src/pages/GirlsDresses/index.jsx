@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "../../components/Header";
 import { SearchPart } from "../../components/SearchPart";
-import { Dresses } from "../../girlsItem/Dresses";
+import { Dresses } from "../../assets/products/girlsItem/Dresses";
 
 export const GirlsDresses = () => {
   return (
