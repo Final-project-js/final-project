@@ -48,7 +48,7 @@ function App() {
       <Products />
       <TopCateg />
       {/* <Splide/>  */}
-      {/* <Footer /> */} */}
+      {/* <Footer /> */}
       <BrowserRouter>
         <Switch>
           <SectionLayout path={routes.baby_clothes} component={Sections} />

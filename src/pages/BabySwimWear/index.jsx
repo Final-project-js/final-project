@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from "../../components/Header";
 import { SearchPart } from "../../components/SearchPart";
-import { SwimWear } from "../../babyItems/SwimWear";
+import { SwimWear } from "../../assets/products/babyItems/SwimWear";
 
 export const BabySwimWear = () => {
   return (
