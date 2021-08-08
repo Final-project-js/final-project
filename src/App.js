@@ -1,9 +1,11 @@
-
+import { routes } from "./routes.js";
+import { BrowserRouter, Switch } from "react-router-dom";
+// import { Header } from "./components/Header";
+// import { Footer } from "./components/Footer";
+// import { SearchPart } from "./components/SearchPart";
+// import { Products } from "./components/Products";
 import "./App.less";
-import { Header } from "./components/Header";
-import { Footer } from "./components/Footer";
-import { SearchPart } from "./components/SearchPart";
-import { Products } from "./components/Products";
+// import Splide from "./components/TopCateg";
 import { TopCateg } from "./components/TopCateg";
 import { BrowserRouter, Route, Switch,  } from "react-router-dom";
 
@@ -48,13 +50,6 @@ import { routes } from "./routes";
 function App() {
   return (
     <div className="App">
-       {/* <Header /> */}
-      {/* <Route>
-        <Products />
-        <TopCateg />
-      </Route> */}
-      {/* <Splide/>  */}
-      
       <BrowserRouter>
         <Switch>
           <Route path='/'>
@@ -79,15 +74,14 @@ function App() {
           <SectionLayout path={routes.action_toy} component={ActionToy} />
           <SectionLayout path={routes.sale_items} component={Sale} />
           <MainLayout path={routes.home} component={Home} />
-          <Products />
+          {/* <Products />
       <TopCateg />
-          <SearchPart />
+          <SearchPart /> */}
           </Route>
      
         </Switch>
         
       </BrowserRouter>
-      {/* <Footer /> */}
     </div>
   );
 }
