@@ -89,6 +89,8 @@ export const TopCateg = () => {
                     <img className='top-categ003' src={diapers2} alt="" />
                 </div>
             </Carousel>
+
+           
         </div>
     )
 }

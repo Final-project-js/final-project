@@ -1,18 +1,7 @@
 import { routes } from "./routes.js";
-import { BrowserRouter, Switch } from "react-router-dom";
-// import { Header } from "./components/Header";
-// import { Footer } from "./components/Footer";
-// import { SearchPart } from "./components/SearchPart";
-// import { Products } from "./components/Products";
 import "./App.less";
-// import Splide from "./components/TopCateg";
-import { TopCateg } from "./components/TopCateg";
 import { BrowserRouter, Route, Switch,  } from "react-router-dom";
-
-
 import "./App.less";
-
-// import { TopCateg } from "./components/TopCateg";
 
 //layouts
 import { MainLayout } from "./layouts/MainLayout/index.jsx";
@@ -20,14 +9,17 @@ import { SectionLayout } from "./layouts/SectionLayout/index.jsx";
 
 //pages
 import { Home } from "./pages/Home";
+
 //baby
 import { Sections } from "./pages/Sections";
 import { BabyWear } from "./pages/BabyWear";
 import { BabySwimWear } from "./pages/BabySwimWear";
+
 //girls
 import { GirlsDresses } from "./pages/GirlsDresses";
 import { GirlsTops } from "./pages/GirslTops";
 import { GirlsAccessories } from "./pages/GirlsAccessories";
+
 //boys
 import { BoysTops } from "./pages/BoysTops";
 import { BoysBottoms } from "./pages/BoysBottoms";
@@ -40,19 +32,17 @@ import { PowerBaby } from "./pages/PowerBaby";
 import { BabyRushCream } from "./pages/BabyRushCream";
 
 //toys
-
 import { BabyParms } from "./pages/BabyParms";
 import { ActionToy } from "./pages/ActionToy";
 import { Dolls } from "./pages/Dolls/index.jsx";
 import { Sale } from "./pages/Sale";
-import { routes } from "./routes";
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route path='/'>
           <SectionLayout path={routes.baby_clothes} component={Sections} />
           <SectionLayout path={routes.baby_sleepingwear} component={BabyWear} />
           <SectionLayout path={routes.baby_swimwear} component={BabySwimWear} />
@@ -74,11 +64,6 @@ function App() {
           <SectionLayout path={routes.action_toy} component={ActionToy} />
           <SectionLayout path={routes.sale_items} component={Sale} />
           <MainLayout path={routes.home} component={Home} />
-          {/* <Products />
-      <TopCateg />
-          <SearchPart /> */}
-          </Route>
-     
         </Switch>
         
       </BrowserRouter>
