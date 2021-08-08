@@ -88,8 +88,6 @@ export const TopCateg = () => {
                     <h3 className='top-categ002'>1dgsds</h3>
                     <img className='top-categ003' src={diapers2} alt="" />
                 </div>
-
-                
             </Carousel>
         </div>
     )

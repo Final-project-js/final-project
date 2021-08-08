@@ -4,12 +4,13 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { SearchPart } from "./components/SearchPart";
 import { Products } from "./components/Products";
+import { TopCateg } from "./components/TopCateg";
 import { BrowserRouter, Route, Switch,  } from "react-router-dom";
 
 
 import "./App.less";
 
-import { TopCateg } from "./components/TopCateg";
+// import { TopCateg } from "./components/TopCateg";
 
 //layouts
 import { MainLayout } from "./layouts/MainLayout/index.jsx";
@@ -47,16 +48,16 @@ import { routes } from "./routes";
 function App() {
   return (
     <div className="App">
-
-        {/* <Header />
-        <SearchPart />
-        <Products /> 
-        <TopCateg/>
-        <Footer /> */}
-
+       {/* <Header /> */}
+      {/* <Route>
+        <Products />
+        <TopCateg />
+      </Route> */}
+      {/* <Splide/>  */}
+      
       <BrowserRouter>
         <Switch>
-          <Route>
+          <Route path='/'>
           <SectionLayout path={routes.baby_clothes} component={Sections} />
           <SectionLayout path={routes.baby_sleepingwear} component={BabyWear} />
           <SectionLayout path={routes.baby_swimwear} component={BabySwimWear} />
@@ -67,31 +68,26 @@ function App() {
           <SectionLayout path={routes.boys_bottom} component={BoysBottoms} />
           <SectionLayout path={routes.boys_activewear} component={BoysWear} />
           <SectionLayout path={routes.swim_diaper} component={SwimDiaper} />
+          <SectionLayout
+            path={routes.reusable_diaper}
+            component={ReusableDiaper}
+          />
           <SectionLayout path={routes.baby_powder} component={PowerBaby} />
           <SectionLayout path={routes.baby_cream} component={BabyRushCream} />
           <SectionLayout path={routes.fashion_dolls} component={Dolls} />
           <SectionLayout path={routes.baby_parms} component={BabyParms} />
           <SectionLayout path={routes.action_toy} component={ActionToy} />
           <SectionLayout path={routes.sale_items} component={Sale} />
-          <SectionLayout
-            path={routes.reusable_diaper}
-            component={ReusableDiaper}
-          />
-
           <MainLayout path={routes.home} component={Home} />
+          <Products />
+      <TopCateg />
+          <SearchPart />
           </Route>
+     
         </Switch>
+        
       </BrowserRouter>
-      {/* <Header />
-      <SearchPart />
-      <Products />
-      <Footer /> */}
-       <Header />
-      <SearchPart />
-      <Products /> 
-      <TopCateg/>
-      {/* <Splide/>  */}
-       <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
