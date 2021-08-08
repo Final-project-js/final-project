@@ -73,7 +73,7 @@ export const Footer = () => {
                     </div>
                     {/* 4 */}
                     <div className='footer-0001'>
-                        <h3 className='footer-07'>Get to know us</h3>
+                        <h3 className='footer-07'>Social media</h3>
                         <div className='footer-08'>
                             <Tag className='footer-09' icon={<FacebookOutlined />} color="#3b5999">
                                 Facebook
