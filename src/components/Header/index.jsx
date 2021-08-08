@@ -55,9 +55,8 @@ export const Header = () => {
 
       <div className="second">
         <div className="lang">
-          <h3>EN</h3>
           <GlobalOutlined style={{ fontSize: "150%" }} />
-          <h3>RU</h3>
+          <h3>EN</h3>
         </div>
         <div className="currency">
           <Select

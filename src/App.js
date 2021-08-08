@@ -43,12 +43,6 @@ import { Sale } from "./pages/Sale";
 function App() {
   return (
     <div className="App">
-      {/* <Header />
-      <SearchPart />
-      <Products />
-      <TopCateg />
-      {/* <Splide/>  */}
-      {/* <Footer /> */}
       <BrowserRouter>
         <Switch>
           <SectionLayout path={routes.baby_clothes} component={Sections} />
@@ -71,6 +65,7 @@ function App() {
           <SectionLayout path={routes.baby_parms} component={BabyParms} />
           <SectionLayout path={routes.action_toy} component={ActionToy} />
           <SectionLayout path={routes.sale_items} component={Sale} />
+
           <MainLayout path={routes.home} component={Home} />
         </Switch>
       </BrowserRouter>
