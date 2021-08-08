@@ -1,14 +1,15 @@
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-// import { SearchPart } from "./components/SearchPart";
+import { SearchPart } from "./components/SearchPart";
 import { Products } from "./components/Products";
 import "./App.less";
+
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <SearchPart /> */}
+      <SearchPart />
       <Products />
       <Footer />
     </div>

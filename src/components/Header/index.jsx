@@ -3,6 +3,13 @@ import img from "./images/delivery.svg";
 import { CheckCircleOutlined, GlobalOutlined } from "@ant-design/icons";
 import { Select, Tooltip, Modal, Button } from "antd";
 import "./Header.less";
+// import SignInSide from "./Registr";
+import { Link } from 'react-router-dom';
+import  Buttons  from "@material-ui/core/Button";
+import { DialogActions, DialogContentText,TextField,Dialog,DialogTitle,DialogContent } from "@material-ui/core";
+
+
+
 
 const Option = Select.Option;
 
@@ -20,6 +27,16 @@ export const Header = () => {
   const handleCancel = () => {
     setIsModalVisible(false);
   };
+
+ const [open,setOpen] = React.useState(false);
+
+ const handleClickOpen = () => {
+   setOpen(true);
+ }
+
+ const handleClose = () => {
+  setOpen(false);
+}
   return (
     <header className="header">
       <div className="first">
@@ -78,40 +95,40 @@ export const Header = () => {
           </Select>
         </div>
         <div className="register">
-          <Button
-            type="text"
-            onClick={showModal}
-            style={{ marginLeft: "10px" }}
-          >
-            SignIn
-          </Button>
-          <Modal
-            title="Basic Modal"
-            visible={isModalVisible}
-            onOk={handleOk}
-            onCancel={handleCancel}
-          >
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </Modal>
-          <Button
-            type="text"
-            onClick={showModal}
-            style={{ marginLeft: "10px" }}
-          >
-            LogIn
-          </Button>
-          <Modal
-            title="Basic Modal"
-            visible={isModalVisible}
-            onOk={handleOk}
-            onCancel={handleCancel}
-          >
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </Modal>
+            <Buttons color="inherit"  type='text' variant="outlined" onClick={handleClickOpen}>Registration</Buttons>
+            <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+              <DialogTitle id = "form-dialog-title">Registration Form</DialogTitle>
+              <DialogContent>
+                <DialogContentText>Log in to see ProductS</DialogContentText>
+                <TextField 
+                 autoFocus
+                 margin="dense"
+                 id="name"
+                 label="Fullname"
+                 type="name"
+                 fullWidth/>
+                <TextField
+                    autoFocus
+                    margin="dense"
+                    id="name"
+                    label="Email adress"
+                    type="email"
+                    fullWidth/>
+
+                     <TextField
+                    autoFocus
+                    margin="dense"
+                    id="pass"
+                    label="Password"
+                    type="password"
+                    fullWidth/>
+              </DialogContent>
+              <DialogActions>
+                <Buttons onClick={handleClose} color="primary">Cancel</Buttons>
+                <Buttons onClick={handleClose} color="primary">Registration</Buttons>
+              </DialogActions>
+            </Dialog>
+
         </div>
       </div>
     </header>
