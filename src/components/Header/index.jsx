@@ -4,12 +4,16 @@ import { CheckCircleOutlined, GlobalOutlined } from "@ant-design/icons";
 import { Select, Tooltip, Modal, Button } from "antd";
 import "./Header.less";
 // import SignInSide from "./Registr";
-import { Link } from 'react-router-dom';
-import  Buttons  from "@material-ui/core/Button";
-import { DialogActions, DialogContentText,TextField,Dialog,DialogTitle,DialogContent } from "@material-ui/core";
-
-
-
+import { Link } from "react-router-dom";
+import Buttons from "@material-ui/core/Button";
+import {
+  DialogActions,
+  DialogContentText,
+  TextField,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+} from "@material-ui/core";
 
 const Option = Select.Option;
 
@@ -28,15 +32,15 @@ export const Header = () => {
     setIsModalVisible(false);
   };
 
- const [open,setOpen] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
 
- const handleClickOpen = () => {
-   setOpen(true);
- }
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
 
- const handleClose = () => {
-  setOpen(false);
-}
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <header className="header">
       <div className="first">
@@ -94,40 +98,57 @@ export const Header = () => {
           </Select>
         </div>
         <div className="register">
-            <Buttons color="inherit"  type='text' variant="outlined" onClick={handleClickOpen}>Registration</Buttons>
-            <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-              <DialogTitle id = "form-dialog-title">Registration Form</DialogTitle>
-              <DialogContent>
-                <DialogContentText>Log in to see ProductS</DialogContentText>
-                <TextField 
-                 autoFocus
-                 margin="dense"
-                 id="name"
-                 label="Fullname"
-                 type="name"
-                 fullWidth/>
-                <TextField
-                    autoFocus
-                    margin="dense"
-                    id="name"
-                    label="Email adress"
-                    type="email"
-                    fullWidth/>
+          <Buttons
+            color="inherit"
+            type="text"
+            variant="outlined"
+            onClick={handleClickOpen}
+          >
+            Registration
+          </Buttons>
+          <Dialog
+            open={open}
+            onClose={handleClose}
+            aria-labelledby="form-dialog-title"
+          >
+            <DialogTitle id="form-dialog-title">Registration Form</DialogTitle>
+            <DialogContent>
+              <DialogContentText>Log in to see ProductS</DialogContentText>
+              <TextField
+                autoFocus
+                margin="dense"
+                id="name"
+                label="Fullname"
+                type="name"
+                fullWidth
+              />
+              <TextField
+                autoFocus
+                margin="dense"
+                id="name"
+                label="Email adress"
+                type="email"
+                fullWidth
+              />
 
-                     <TextField
-                    autoFocus
-                    margin="dense"
-                    id="pass"
-                    label="Password"
-                    type="password"
-                    fullWidth/>
-              </DialogContent>
-              <DialogActions>
-                <Buttons onClick={handleClose} color="primary">Cancel</Buttons>
-                <Buttons onClick={handleClose} color="primary">Registration</Buttons>
-              </DialogActions>
-            </Dialog>
-
+              <TextField
+                autoFocus
+                margin="dense"
+                id="pass"
+                label="Password"
+                type="password"
+                fullWidth
+              />
+            </DialogContent>
+            <DialogActions>
+              <Buttons onClick={handleClose} color="primary">
+                Cancel
+              </Buttons>
+              <Buttons onClick={handleClose} color="primary">
+                Registration
+              </Buttons>
+            </DialogActions>
+          </Dialog>
         </div>
       </div>
     </header>
