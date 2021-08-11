@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+// import SignInSide from "./Registr";
 import img from "./images/delivery.svg";
 import img1 from "./images/basket.svg";
 import logo from "./images/kids.svg";
 import { CheckCircleOutlined } from "@ant-design/icons";
-import { Tooltip } from "antd";
+import { Tooltip, Button } from "antd";
 
 import "./Header.less";
 
@@ -43,25 +44,28 @@ export const Header = () => {
           </div>
         </Tooltip>
       </div>
-
+      {/* <SignInSide /> */}
       <div>
-        <div className="basket">
-          {/* <Link to="/cart"> */}
-          <div className="basket">
-            <img
-              src={img1}
-              alt="basket"
-              style={{
-                width: "45px",
-                height: "40px",
+        {/* <Link to="/cart"> */}
+        <div className="login">
+          <Button type="text" style={{ marginRight: 5 }}>
+            Log In
+          </Button>
+          <Button type="text" style={{ marginRight: 5 }}>
+            Sign Up
+          </Button>
+          <img
+            src={img1}
+            alt="basket"
+            style={{
+              width: "45px",
+              height: "40px",
 
-                marginRight: "50px",
-                marginTop: "20px",
-              }}
-            />
-          </div>
-          {/* </Link> */}
+              marginRight: "50px",
+            }}
+          />
         </div>
+        {/* </Link> */}
       </div>
     </header>
   );
