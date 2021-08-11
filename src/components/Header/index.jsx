@@ -8,9 +8,16 @@ import logo from "./images/kids.svg";
 import { CheckCircleOutlined } from "@ant-design/icons";
 import { Tooltip, Button } from "antd";
 
+// import {useSelector} from 'react-redux'
+
 import "./Header.less";
 
 export const Header = () => {
+
+  const totalCount = useSelector(state => state.orderReducer.totalCount)
+  // const totalPrice = useSelector(state => state.orderReducer.totalPrice)
+
+
   // const { totalQuantities } = useSelector((state) => state.CartReducer);
   return (
     <header className="header">
@@ -39,6 +46,7 @@ export const Header = () => {
                 marginRight: "5px",
                 fontSize: "150%",
               }}
+              
             />
             <h3>Best Prices Everyday</h3>
           </div>
@@ -54,16 +62,19 @@ export const Header = () => {
           <Button type="text" style={{ marginRight: 5 }}>
             Sign Up
           </Button>
-          <img
-            src={img1}
-            alt="basket"
-            style={{
-              width: "45px",
-              height: "40px",
+          <span>
+            {totalCount}
+            <img
+              src={img1}
+              alt="basket"
+              style={{
+                width: "45px",
+                height: "40px",
 
-              marginRight: "50px",
-            }}
-          />
+                marginRight: "50px",
+              }}
+            />
+          </span>
         </div>
         {/* </Link> */}
       </div>

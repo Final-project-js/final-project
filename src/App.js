@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer";
 import { SearchPart } from "./components/SearchPart";
 import { TopCateg } from "./components/TopCateg";
 import { Products } from "./components/Products";
+import { Box } from "./components/Box";
 
 function App() {
   return (
