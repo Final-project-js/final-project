@@ -1,46 +1,16 @@
-import React, { useState } from "react";
-import img from "./images/delivery.svg";
-import { CheckCircleOutlined, GlobalOutlined } from "@ant-design/icons";
-import { Select, Tooltip, Modal, Button } from "antd";
-import "./Header.less";
-// import SignInSide from "./Registr";
+import React from "react";
 import { Link } from "react-router-dom";
-import Buttons from "@material-ui/core/Button";
-import {
-  DialogActions,
-  DialogContentText,
-  TextField,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-} from "@material-ui/core";
+import { useSelector } from "react-redux";
+import img from "./images/delivery.svg";
+import img1 from "./images/basket.svg";
+import logo from "./images/kids.svg";
+import { CheckCircleOutlined } from "@ant-design/icons";
+import { Tooltip } from "antd";
 
-const Option = Select.Option;
+import "./Header.less";
 
 export const Header = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
-
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+  // const { totalQuantities } = useSelector((state) => state.CartReducer);
   return (
     <header className="header">
       <div className="first">
@@ -74,81 +44,23 @@ export const Header = () => {
         </Tooltip>
       </div>
 
-      <div className="second">
-        <div className="lang">
-          <GlobalOutlined style={{ fontSize: "150%" }} />
-          <h3>EN</h3>
-        </div>
-        <div className="currency">
-          <Select
-            defaultValue="Country"
-            style={{ width: 150, marginLeft: "10px" }}
-            bordered={false}
-          >
-            <Option value="KG">KG</Option>
-            <Option value="USA">USA</Option>
-          </Select>
-          <Select
-            defaultValue="Currency"
-            style={{ width: 150 }}
-            bordered={false}
-          >
-            <Option value="Som">Som</Option>
-            <Option value="Dollar">Dollar</Option>
-          </Select>
-        </div>
-        <div className="register">
-          <Buttons
-            color="inherit"
-            type="text"
-            variant="outlined"
-            onClick={handleClickOpen}
-          >
-            Registration
-          </Buttons>
-          <Dialog
-            open={open}
-            onClose={handleClose}
-            aria-labelledby="form-dialog-title"
-          >
-            <DialogTitle id="form-dialog-title">Registration Form</DialogTitle>
-            <DialogContent>
-              <DialogContentText>Log in to see ProductS</DialogContentText>
-              <TextField
-                autoFocus
-                margin="dense"
-                id="name"
-                label="Fullname"
-                type="name"
-                fullWidth
-              />
-              <TextField
-                autoFocus
-                margin="dense"
-                id="name"
-                label="Email adress"
-                type="email"
-                fullWidth
-              />
+      <div>
+        <div className="basket">
+          {/* <Link to="/cart"> */}
+          <div className="basket">
+            <img
+              src={img1}
+              alt="basket"
+              style={{
+                width: "45px",
+                height: "40px",
 
-              <TextField
-                autoFocus
-                margin="dense"
-                id="pass"
-                label="Password"
-                type="password"
-                fullWidth
-              />
-            </DialogContent>
-            <DialogActions>
-              <Buttons onClick={handleClose} color="primary">
-                Cancel
-              </Buttons>
-              <Buttons onClick={handleClose} color="primary">
-                Registration
-              </Buttons>
-            </DialogActions>
-          </Dialog>
+                marginRight: "50px",
+                marginTop: "20px",
+              }}
+            />
+          </div>
+          {/* </Link> */}
         </div>
       </div>
     </header>
