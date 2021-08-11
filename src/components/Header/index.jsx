@@ -1,25 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 import img from "./images/delivery.svg";
-import { CheckCircleOutlined, GlobalOutlined } from "@ant-design/icons";
-import { Select, Tooltip, Modal, Button } from "antd";
+import img1 from "./images/basket.svg";
+import logo from "./images/kids.svg";
+import { CheckCircleOutlined } from "@ant-design/icons";
+import { Tooltip } from "antd";
+
 import "./Header.less";
 
-const Option = Select.Option;
-
 export const Header = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
+  // const { totalQuantities } = useSelector((state) => state.CartReducer);
   return (
     <header className="header">
       <div className="first">
@@ -53,65 +44,23 @@ export const Header = () => {
         </Tooltip>
       </div>
 
-      <div className="second">
-        <div className="lang">
-          <h3>EN</h3>
-          <GlobalOutlined style={{ fontSize: "150%" }} />
-          <h3>RU</h3>
-        </div>
-        <div className="currency">
-          <Select
-            defaultValue="Country"
-            style={{ width: 150, marginLeft: "10px" }}
-            bordered={false}
-          >
-            <Option value="KG">KG</Option>
-            <Option value="USA">USA</Option>
-          </Select>
-          <Select
-            defaultValue="Currency"
-            style={{ width: 150 }}
-            bordered={false}
-          >
-            <Option value="Som">Som</Option>
-            <Option value="Dollar">Dollar</Option>
-          </Select>
-        </div>
-        <div className="register">
-          <Button
-            type="text"
-            onClick={showModal}
-            style={{ marginLeft: "10px" }}
-          >
-            SignIn
-          </Button>
-          <Modal
-            title="Basic Modal"
-            visible={isModalVisible}
-            onOk={handleOk}
-            onCancel={handleCancel}
-          >
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </Modal>
-          <Button
-            type="text"
-            onClick={showModal}
-            style={{ marginLeft: "10px" }}
-          >
-            LogIn
-          </Button>
-          <Modal
-            title="Basic Modal"
-            visible={isModalVisible}
-            onOk={handleOk}
-            onCancel={handleCancel}
-          >
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-            <p>Some contents...</p>
-          </Modal>
+      <div>
+        <div className="basket">
+          {/* <Link to="/cart"> */}
+          <div className="basket">
+            <img
+              src={img1}
+              alt="basket"
+              style={{
+                width: "45px",
+                height: "40px",
+
+                marginRight: "50px",
+                marginTop: "20px",
+              }}
+            />
+          </div>
+          {/* </Link> */}
         </div>
       </div>
     </header>
