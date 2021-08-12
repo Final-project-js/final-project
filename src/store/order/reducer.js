@@ -1,12 +1,19 @@
 import { ADD_ORDER, DELETE_ORDER } from './action.js'
 
+
+
+
+const localStorages = JSON.parse(localStorage.getItem("product"));
+
 const initialState = {
     orders: [],
     totalCount: 0,
     totalPrice: 0
 }
 
-export const orderReducer = (state = initialState, action) => {
+
+
+export const orderReducer = (state = localStorages || initialState, action) => {
     console.log(action)
 
     switch(action.type) {
