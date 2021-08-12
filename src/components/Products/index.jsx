@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { data } from "./data";
 import "./Products.less";
 import {useSelector, useDispatch} from 'react-redux'
 import {add_order} from '../../store/order/action'
 // import { babyPowder } from "../../../../data";
+
 
 export const Products = () => {
 
@@ -11,6 +12,8 @@ export const Products = () => {
   const totalCount = useSelector(state => state.orderReducer.totalCount)
   const totalPrice = useSelector(state => state.orderReducer.totalPrice)
   const dispatch = useDispatch()
+
+  const [orderColor, setOrderColor] = useState(false)
   // const state = useSelector(state => state)
 
 
@@ -33,7 +36,7 @@ export const Products = () => {
               <b>{el.price}</b>
               <b>{el.count}</b>
               <b>{el.num}</b>
-              <b>{el.choose}</b>
+              <b >{el.choose}</b>
             </div>
           );
         })}

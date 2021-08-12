@@ -64,6 +64,7 @@ export const Header = () => {
           </Button>
           <span>
             {totalCount}
+            <Link to='/basket'>
             <img
               src={img1}
               alt="basket"
@@ -73,7 +74,7 @@ export const Header = () => {
 
                 marginRight: "50px",
               }}
-            />
+            /></Link>
           </span>
         </div>
         {/* </Link> */}
