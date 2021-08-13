@@ -4,7 +4,13 @@ import { useDispatch, useSelector } from 'react-redux'
 import './Box.less'
 import baby from '.././Products/images/baby.png'
 import Jquery from 'jquery'
-import { delete_order, add_order } from '../../store/order/action'
+import { delete_order, add_order, delete_order1 } from '../../store/order/action'
+
+
+function handleMenuClick(e) {
+    console.log('click', e);
+  }
+
 
 
 
@@ -45,13 +51,13 @@ export const Box = ({el, id})=> {
                             </span>
                             <span className='box-07'>
                                 {/* Price */}
-                                <h5>{el.price}</h5>
+                                <h5>{totalPrice} $</h5>
                             </span>
                             <span className='box-08'>
                                 {/* Inc/Dec */}
                                 <span className='box-009'>
                                     <Button className='box-09' onClick={()=>{
-                                            dispatch(add_order(el))
+                                            dispatch(add_order(el, id))
                                         }}>+</Button>
                                     <h5 
                                         className='box-010'
@@ -60,14 +66,24 @@ export const Box = ({el, id})=> {
                                     <Button 
                                         className='box-011'
                                         onClick={()=>{
-                                            dispatch(delete_order(el))
+                                            dispatch(delete_order(el, id))
                                         }}
                                     >-</Button>
                                 </span>
                             </span>
                             <span className='box-012'>
-                                {/* Total price */}
-                                {/* <h5 className='box-013'>{totalPrice}</h5> */}
+                                <Button type='primary' onClick={()=> {
+                                    dispatch(delete_order(el, id))
+                                }} >Delete</Button>
+                                {/* <Button className='box-09' onClick={()=>{
+                                            dispatch(add_order(el, id))
+                                        }}>+</Button>
+                                        <Button 
+                                        className='box-011'
+                                        onClick={()=>{
+                                            dispatch(delete_order(el, id))
+                                        }}
+                                    >-</Button> */}
                             </span>
                     </div>
                     })
