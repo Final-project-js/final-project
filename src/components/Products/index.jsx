@@ -34,8 +34,8 @@ export const Products = () => {
               <img src={el.image} className="img" />
               <b>{el.title} </b>
               <b>{el.price}</b>
-              <b>{el.count}</b>
-              <b>{el.num}</b>
+              {/* <b>{el.count}</b> */}
+              {/* <b>{el.num}</b> */}
               <b >{el.choose}</b>
             </div>
           );
