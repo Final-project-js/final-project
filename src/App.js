@@ -1,6 +1,6 @@
 import "./App.less";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
-import "./App.less";
+
 import { Route } from "react-router";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";

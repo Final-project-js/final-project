@@ -49,7 +49,8 @@ const Cart = () => {
                 </span>
                 <span className="box-07">
                   <h5>
-                    {el.price} $<h5> {totalPrice} $</h5>
+                    $ {el.price}
+                    <h5>$ {totalPrice}</h5>
                   </h5>
                 </span>
 
