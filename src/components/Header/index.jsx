@@ -14,7 +14,7 @@ import "./Header.less";
 
 export const Header = () => {
   const totalCount = useSelector((state) => state.orderReducer.totalCount);
-  // const totalPrice = useSelector(state => state.orderReducer.totalPrice)
+  const totalPrice = useSelector((state) => state.orderReducer.totalPrice);
 
   // const { totalQuantities } = useSelector((state) => state.CartReducer);
   return (

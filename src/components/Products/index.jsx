@@ -19,23 +19,22 @@ export const Products = () => {
       <div className="card">
         {data.map((el, id) => {
           return (
-            <Link to={`/product/${id}`}>
-              <div
-                style={{
-                  cursor: "pointer",
-                  display: "flex",
-                  flexDirection: "column",
-                }}
-                key={id}
-                onClick={() => dispatch(add_order(el))}
-              >
-                <img src={el.image} className="img" />
-                <div className="cardText">
-                  <b>{el.title} </b>
-                  <b>{el.price}$</b>
-                </div>
-              </div>
-            </Link>
+            <div
+              style={{
+                cursor: "pointer",
+                display: "flex",
+                flexDirection: "column",
+              }}
+              key={id}
+              onClick={() => dispatch(add_order(el))}
+            >
+              <img src={el.image} className="img" />
+              <b>{el.title} </b>
+              <b>{el.price}</b>
+              {/* <b>{el.count}</b> */}
+              {/* <b>{el.num}</b> */}
+              <b>{el.choose}</b>
+            </div>
           );
         })}
         {/* {orders.map((el, id) => {
