@@ -1,4 +1,3 @@
-import { HeartOutlined } from "@ant-design/icons";
 export const data = [
   {
     image:
@@ -7,7 +6,8 @@ export const data = [
     price: 50,
     count: 1,
     num: 50,
-    choose: <HeartOutlined />,
+    description:
+      "The Perfect Baby Gift Set For Baby Boy & Baby Girl in Amazing Cartoon Box",
   },
   {
     image:
@@ -16,7 +16,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -25,7 +26,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -34,7 +36,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -43,7 +46,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -52,7 +56,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -61,7 +66,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -70,7 +76,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -79,7 +86,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -88,7 +96,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -97,7 +106,8 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
   {
     image:
@@ -106,6 +116,7 @@ export const data = [
     price: 40,
     count: 1,
     num: 40,
-    choose: <HeartOutlined />,
+    description:
+      "Bodysuit jumpsuits Romper Long Sleeve Outfit Wrap-Style for BabyBoy-BabyGirl and Unisex",
   },
 ];
