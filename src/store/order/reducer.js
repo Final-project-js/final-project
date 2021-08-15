@@ -65,8 +65,8 @@ export const orderReducer = (state = localStorages || initialState, action) => {
         };
       }
 
-    case DELETE_ORDER1:
-      return initialState;
+    // case DELETE_ORDER1:
+    //   return initialState;
     default:
       return state;
   }
