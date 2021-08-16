@@ -1,9 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  delete_order,
-  add_order,
-  delete_order1,
+import {delete_order,add_order,
 } from "../../store/order/action";
 import "./Cart.less";
 import Checkout from "../Checkout";
@@ -19,6 +16,9 @@ export const Cart = () => {
   const totalPrice = useSelector((state) => state.orderReducer.totalPrice);
   const totalCount = useSelector((state) => state.orderReducer.totalCount);
 
+  useEffect(()=> {
+    localStorage.setItem('product', JSON.stringify(state))
+  }, [state])
 
   return (
     <div className="box">
@@ -48,9 +48,9 @@ export const Cart = () => {
                 <span className="box-03">
                   <img className="ui fluid image" src={el.image} />
                 </span>
-                <span>
+                <div className='box-title'>
                   <h3 className="box-06">{el.title}</h3>
-                </span>
+                </div>
                 <span className="box-07">
                   <h5>
                     $ {el.price}
@@ -82,83 +82,15 @@ export const Cart = () => {
                   onClick={() => {
                     dispatch(delete_order(el, id));
                   }}
-                  type="text"
+                  type="text" className='box-btn-delete'
                 >
-                  <DeleteOutlined />
+                  <DeleteOutlined  className='box-delete'/>
                 </Button>
               </div>
             </div>
           );
         })
       }
-       {/* <div className="box-01">
-        <Link to='/'>
-          <Button
-              type="primary"
-              style={{
-                alignSelf: "flex-start",
-                marginBottom: '60px',
-              }}
-            >
-              ❮ Go back to 
-            </Button>
-        </Link>
-        
-        <h2>Your orders</h2>
-        <Checkout /> */}
-        {orders.map((el, id) => {
-          // return (
-          //   <div className="box-02">
-          //     <div className="box-03">
-
-          //       <span className="box-03">
-          //         <img className="ui fluid image" src={el.image} />
-          //       </span>
-          //       <span>
-          //         <h3 className="box-06">{el.title}</h3>
-          //       </span>
-          //       <span className="box-07">
-          //         <h5>
-          //           $ {el.price}
-          //           <h5>$ {totalPrice}</h5>
-          //         </h5>
-          //       </span>
-
-          //       <span className="box-009">
-          //         <Button
-          //           className="box-09 "
-          //           onClick={() => {
-          //             dispatch(add_order(el));
-          //           }}
-          //         >
-          //           +
-          //         </Button>
-          //         <h5 className="box-010">{el.count}</h5>
-          //         <Button
-          //           className="box-011"
-          //           onClick={() => {
-          //             dispatch(delete_order(el));
-          //           }}
-          //         >
-          //           -
-          //         </Button>
-          //       </span>
-                
-          //       <Button
-          //         onClick={() => {
-          //           dispatch(delete_order(el, id));
-          //         }}
-          //         type="text"
-          //       >
-          //         <DeleteOutlined />
-          //       </Button>
-          //     </div>
-          //   </div>
-          // );
-        })}
-      {/* </div>  */}
-
-      {/* <Checkout /> */}
-    // </div>
+     </div>
   );
 };
