@@ -14,7 +14,7 @@ export const Box = () => {
 
   return (
     <div className="box">
-      <h2 style={{ marginLeft: "170px" }}>Your orders</h2>
+      <h2 style={{ marginLeft: "170px", paddingBottom: '15px' }}>Your orders</h2>
       {orders.map((el, id) => {
         return (
           <div className="container">
