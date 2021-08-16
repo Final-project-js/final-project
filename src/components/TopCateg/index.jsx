@@ -19,7 +19,6 @@ import babytoy3 from "./images/babytoy3.jpg";
 import babytoy4 from "./images/babytoy4.jpg";
 import babytoy5 from "./images/babytoy5.jpg";
 import babytoy6 from "./images/babytoy6.jpg";
-
 import diapers1 from "./images/diapers1.jpg";
 import diapers2 from "./images/diapers2.jpg";
 

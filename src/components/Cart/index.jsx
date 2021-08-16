@@ -11,7 +11,7 @@ import { Button } from "antd";
 import { DeleteOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
-const Cart = () => {
+export const Cart = () => {
   const dispatch = useDispatch();
   const state = useSelector((state) => state.orderReducer);
 
@@ -49,7 +49,8 @@ const Cart = () => {
                 </span>
                 <span className="box-07">
                   <h5>
-                    {el.price} $<h5> {totalPrice} $</h5>
+                    $ {el.price}
+                    <h5>$ {totalPrice}</h5>
                   </h5>
                 </span>
 
@@ -111,5 +112,3 @@ const Cart = () => {
     </div>
   );
 };
-
-export default Cart;
