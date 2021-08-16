@@ -32,7 +32,7 @@ export const Products = () => {
                 <img src={el.image} className="img" />
                 <div className="cardText">
                   <b>{el.title} </b>
-                  <b>${el.price}</b>
+                  <b>{el.price}$</b>
                 </div>
               </div>
             </Link>

@@ -4,12 +4,10 @@ import { BrowserRouter as Router, Switch } from "react-router-dom";
 import { Route } from "react-router";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { SearchPart } from "./components/SearchPart";
-import { TopCateg } from "./components/TopCateg";
-import { Products } from "./components/Products";
+
 import { Box } from "./components/Box";
 import { All } from "./All";
-import Cart from "./components/Cart";
+import { Cart } from "./components/Cart";
 import Pay from "./components/Pay";
 
 function App() {
