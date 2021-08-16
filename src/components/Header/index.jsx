@@ -1,22 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-// import SignInSide from "./Registr";
 import img from "./images/delivery.svg";
 import img1 from "./images/basket.svg";
-import logo from "./images/kids.svg";
 import { CheckCircleOutlined } from "@ant-design/icons";
 import { Tooltip, Button } from "antd";
 
-// import {useSelector} from 'react-redux'
 
 import "./Header.less";
 
 export const Header = () => {
   const totalCount = useSelector((state) => state.orderReducer.totalCount);
-  // const totalPrice = useSelector(state => state.orderReducer.totalPrice)
-
-  // const { totalQuantities } = useSelector((state) => state.CartReducer);
   return (
     <header className="header">
       <div className="first">
@@ -49,13 +43,13 @@ export const Header = () => {
           </div>
         </Tooltip>
       </div>
-      {/* <SignInSide /> */}
       <div>
-        {/* <Link to="/cart"> */}
         <div className="login">
-          <Button type="text" style={{ marginRight: 5 }}>
-            Log In
-          </Button>
+          <Link to='/login'>
+            <Button type="text" style={{ marginRight: 5 }}>
+              Log In
+            </Button>
+          </Link>
           <Button type="text" style={{ marginRight: 5 }}>
             Sign Up
           </Button>
@@ -75,7 +69,6 @@ export const Header = () => {
             </Link>
           </span>
         </div>
-        {/* </Link> */}
       </div>
     </header>
   );

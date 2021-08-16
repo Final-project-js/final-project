@@ -13,8 +13,6 @@ export const Cart = () => {
   const state = useSelector((state) => state.orderReducer);
 
   const orders = useSelector((state) => state.orderReducer.orders);
-  const totalPrice = useSelector((state) => state.orderReducer.totalPrice);
-  const totalCount = useSelector((state) => state.orderReducer.totalCount);
 
   useEffect(()=> {
     localStorage.setItem('product', JSON.stringify(state))
@@ -24,26 +22,9 @@ export const Cart = () => {
     <div className="box">
       <div className="box-01">
         <div className='box-0000'>
-          
-          <h2 className='box-0002'>Your orders</h2>
-        </div> 
-        
-          <div className='box-0005'>
-            <Link to='/' >
-              <Button
-                className='box-00001'
-                // type='primary'
-                
-              >Go back</Button>
-            </Link>
-            <Checkout/>
-          </div>
-          
-      </div>
-      {
-        orders.map((el, id)=> {
-          return (
-            <div className="box-02">
+          {
+            orders.map((el, id) => {
+              return <div className="box-02">
               <div className="box-03">
                 <span className="box-03">
                   <img className="ui fluid image" src={el.image} />
@@ -54,7 +35,6 @@ export const Cart = () => {
                 <span className="box-07">
                   <h5>
                     $ {el.price}
-                    {/* <h5>$ {totalPrice}</h5> */}
                   </h5>
                 </span>
 
@@ -88,9 +68,23 @@ export const Cart = () => {
                 </Button>
               </div>
             </div>
-          );
-        })
-      }
+            })
+          }
+        </div> 
+        
+          <div className='box-0005'>
+            <Link to='/' >
+              <Button
+                className='box-00001'
+                // type='primary'
+                
+              >Go back</Button>
+            </Link>
+            <Checkout/>
+          </div>
+          
+      </div>
+      
      </div>
   );
 };

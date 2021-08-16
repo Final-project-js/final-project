@@ -21,32 +21,6 @@ export const Footer = () => {
   return (
     <footer className="footer-section">
       <div className="footer-section-container">
-        {/* header - icons */}
-        {/* <div className="footer-icon"> */}
-        {/* <Tag
-            className="footer-icon1"
-            onClick={{}}
-            icon={<CheckCircleOutlined />}
-            color="success"
-          >
-            Best Price Guarantee
-          </Tag>
-          <Tag
-            className="footer-icon2"
-            icon={<SyncOutlined spin />}
-            color="processing"
-          >
-            Free Speedy Delivery
-          </Tag>
-          <Tag
-            className="footer-icon3"
-            icon={<ExclamationCircleOutlined />}
-            color="warning"
-            primary
-          >
-            Easy Returns
-          </Tag> */}
-        {/* </div> */}
 
         <div className="f-text">
           <p className="footer-text1">
