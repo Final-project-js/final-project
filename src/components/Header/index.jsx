@@ -49,6 +49,11 @@ export const Header = () => {
               Login in
             </Button>
           </Link>
+          <Link to="/signUp">
+            <Button type="text" style={{ marginRight: 5 }}>
+              Sign up
+            </Button>
+          </Link>
           <span>
             {totalCount}
             <Link to="/cart">

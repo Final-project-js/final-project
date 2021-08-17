@@ -8,15 +8,15 @@ const Pay = (props) => {
   const totalPrice = useSelector((state) => state.orderReducer.totalPrice);
 
   const PayAlert = () => {
-    Swal.fire({
-        title: 'PayMent',
-        text:'Thank you for shpping,come again',
-        icon:'success',
-        button:'Aceptar'
-    })
+    // Swal.fire({
+    //     title: 'PayMent',
+    //     text:'Thank you for shopping,come again',
+    //     icon:'success',
+    //     button:'Aceptar'
+    // })
     alert(`You paid  ${totalPrice} $ , Thank you for shoping,come again`);
 
-      Swal.fire('Any fool can use a computer')
+      // Swal.fire('Any fool can use a computer')
   };
   return (
     <div className="container">
