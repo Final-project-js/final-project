@@ -1,5 +1,6 @@
 import React from "react";
 import "./TopCateg.less";
+import "./Topres.less";
 
 // antd carousel
 import { Carousel } from "antd";
@@ -25,69 +26,71 @@ import diapers2 from "./images/diapers2.jpg";
 export const TopCateg = () => {
   return (
     <div className="top-images00">
-      <Carousel className="top-images01" autoplay="true" dotPosition="top">
-        {/* clothes */}
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babyclothes1} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babyclothes2} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babyclothes3} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babyclothes4} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babyclothes5} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babyclothes6} alt="" />
-        </div>
+      <div className="top-card">
+        <Carousel className="top-images01" autoplay="true" dotPosition="top">
+          {/* clothes */}
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babyclothes1} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babyclothes2} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babyclothes3} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babyclothes4} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babyclothes5} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babyclothes6} alt="" />
+          </div>
 
-        {/* toys */}
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babytoy1} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babytoy2} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babytoy3} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babytoy4} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babytoy5} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={babytoy6} alt="" />
-        </div>
+          {/* toys */}
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babytoy1} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babytoy2} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babytoy3} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babytoy4} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babytoy5} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={babytoy6} alt="" />
+          </div>
 
-        {/* daipers */}
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={diapers1} alt="" />
-        </div>
-        <div className="top-categ000">
-          {/* <h3 className="top-categ002">Products</h3> */}
-          <img className="top-categ003" src={diapers2} alt="" />
-        </div>
-      </Carousel>
+          {/* daipers */}
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={diapers1} alt="" />
+          </div>
+          <div className="top-categ000">
+            {/* <h3 className="top-categ002">Products</h3> */}
+            <img className="top-categ003" src={diapers2} alt="" />
+          </div>
+        </Carousel>
+      </div>
     </div>
   );
 };

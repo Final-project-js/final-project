@@ -4,12 +4,13 @@ import { useSelector } from "react-redux";
 // import SignInSide from "./Registr";
 import img from "./images/delivery.svg";
 import img1 from "./images/basket.svg";
-import logo from "./images/kids.svg";
+import imgMb from "./images/delivery.svg";
+import img1Mb from "./images/basket.svg";
 import { CheckCircleOutlined } from "@ant-design/icons";
 import { Tooltip, Button } from "antd";
 
 // import {useSelector} from 'react-redux'
-
+import "./Hres.less";
 import "./Header.less";
 
 export const Header = () => {
@@ -75,7 +76,59 @@ export const Header = () => {
             </Link>
           </span>
         </div>
-        {/* </Link> */}
+      </div>
+      <div className="md-format">
+        <div className="first-md">
+          <Tooltip title="For above 999 som in Kyrgyzstan">
+            <div className="delivery-md">
+              <img
+                src={imgMb}
+                alt="delivery icon"
+                style={{
+                  width: "25px",
+                  height: "20px",
+                  // marginLeft: "30px",
+                  marginRight: "5px",
+                  marginTop: "10px",
+                }}
+              />
+              <h4 style={{ marginTop: "20px" }}>Free delivery</h4>
+            </div>
+          </Tooltip>
+          <Tooltip title="The Best prices in the town">
+            <div className="price-mb">
+              <CheckCircleOutlined
+                style={{
+                  marginLeft: "10px",
+                  marginRight: "5px",
+                  fontSize: "100%",
+                  marginTop: "15px",
+                }}
+              />
+              <h4 style={{ marginTop: "20px", marginRight: "5px" }}>
+                Best Prices Everyday
+              </h4>
+            </div>
+          </Tooltip>
+        </div>
+
+        <div className="login-mb">
+          <span style={{ marginLeft: "5px" }}>
+            {totalCount}
+            <Link to="/cart">
+              <img
+                src={img1Mb}
+                alt="basket"
+                style={{
+                  width: "25px",
+                  height: "20px",
+
+                  marginRight: "20px",
+                }}
+              ></img>
+            </Link>
+          </span>
+        </div>
       </div>
     </header>
   );

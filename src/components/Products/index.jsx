@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { data } from "./data";
 import "./Products.less";
+import "./ProductMb.less";
 import { useSelector, useDispatch } from "react-redux";
 import { add_order } from "../../store/order/action";
 // import { babyPowder } from "../../../../data";
@@ -38,14 +39,30 @@ export const Products = () => {
             </Link>
           );
         })}
-        {/* {orders.map((el, id) => {
+      </div>
+      {/* responsive */}
+      <div className="card-mb">
+        {data.map((el, id) => {
           return (
-            <div el={el} key={id} id={id}>
-              <b>{el.title}</b> {el.price} {""} <img src="{el.img}" alt="" />{" "}
-              {""} <b>{el.chosen}</b>
-            </div>
+            <Link to={`/product/${id}`}>
+              <div
+                style={{
+                  cursor: "pointer",
+                  display: "flex",
+                  flexDirection: "column",
+                }}
+                key={id}
+                onClick={() => dispatch(add_order(el))}
+              >
+                <img src={el.image} className="img-mb" />
+                <div className="cardText-mb">
+                  <b>{el.title} </b>
+                  <b>{el.price}$</b>
+                </div>
+              </div>
+            </Link>
           );
-        })} */}
+        })}
       </div>
     </div>
   );
