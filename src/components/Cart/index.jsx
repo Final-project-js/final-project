@@ -1,9 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import {
-  delete_order,
-  add_order,
-  delete_order1,
+import {delete_order,add_order,
 } from "../../store/order/action";
 import "./Cart.less";
 import Checkout from "../Checkout";
@@ -16,41 +13,28 @@ export const Cart = () => {
   const state = useSelector((state) => state.orderReducer);
 
   const orders = useSelector((state) => state.orderReducer.orders);
-  const totalPrice = useSelector((state) => state.orderReducer.totalPrice);
-  const totalCount = useSelector((state) => state.orderReducer.totalCount);
 
-  // useEffect(() => {
-  //     localStorage.setItem('product', JSON.stringify(state))
-  // }, [state])
+  useEffect(()=> {
+    localStorage.setItem('product', JSON.stringify(state))
+  }, [state])
 
   return (
     <div className="box">
       <div className="box-01">
-        <h2>Your orders</h2>
-
-        {/* <span className='box-title'>
-                    <span className='box-title01'>Picture</span>
-                    <span className='box-title02'> Name</span>
-                    <span className='box-title03'> Price</span>
-                    <span className='box-title04'>Inc/Dec</span> */}
-        {/* <span className='box-title05'>Total price</span> */}
-        {/* </span> */}
-        {orders.map((el, id) => {
-          return (
-            <div className="box-02">
+        <div className='box-0000'>
+          {
+            orders.map((el, id) => {
+              return <div className="box-02">
               <div className="box-03">
-                {/* <div className="ui vertical divider">AND</div> */}
-
                 <span className="box-03">
                   <img className="ui fluid image" src={el.image} />
                 </span>
-                <span>
+                <div className='box-title'>
                   <h3 className="box-06">{el.title}</h3>
-                </span>
+                </div>
                 <span className="box-07">
                   <h5>
                     $ {el.price}
-                    <h5>$ {totalPrice}</h5>
                   </h5>
                 </span>
 
@@ -73,42 +57,34 @@ export const Cart = () => {
                     -
                   </Button>
                 </span>
-                {/* <h3 className="ui brown block header">{el.category}</h3>
-                            <p>{el.description}</p> */}
-                {/* <div className="ui vertical animated button" tabIndex="0">
-                        <div className="hidden content">
-                          <i className="shop icon"></i>
-                        </div>
-                        <div className="visible content">Add to Cart</div>
-                      </div> */}
+                
                 <Button
                   onClick={() => {
                     dispatch(delete_order(el, id));
                   }}
-                  type="text"
+                  type="text" className='box-btn-delete'
                 >
-                  <DeleteOutlined />
+                  <DeleteOutlined  className='box-delete'/>
                 </Button>
               </div>
             </div>
-          );
-        })}
+            })
+          }
+        </div> 
+        
+          <div className='box-0005'>
+            <Link to='/' >
+              <Button
+                className='box-00001'
+                // type='primary'
+                
+              >Go back</Button>
+            </Link>
+            <Checkout/>
+          </div>
+          
       </div>
-
-      <Checkout />
-      <Link to="/">
-        {" "}
-        <Button
-          type="primary"
-          style={{
-            display: "flex",
-            alignSelf: "flex-end",
-            margin: "10px 0 0 115px",
-          }}
-        >
-          Home page
-        </Button>
-      </Link>
-    </div>
+      
+     </div>
   );
 };

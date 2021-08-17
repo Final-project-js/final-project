@@ -4,16 +4,12 @@ import "./Products.less";
 import "./ProductMb.less";
 import { useSelector, useDispatch } from "react-redux";
 import { add_order } from "../../store/order/action";
-// import { babyPowder } from "../../../../data";
 import { Link } from "react-router-dom";
 export const Products = () => {
   const orders = useSelector((state) => state.orderReducer.orders);
-  const totalCount = useSelector((state) => state.orderReducer.totalCount);
-  const totalPrice = useSelector((state) => state.orderReducer.totalPrice);
   const dispatch = useDispatch();
 
   const [orderColor, setOrderColor] = useState(false);
-  // const state = useSelector(state => state)
 
   return (
     <div className="products">
@@ -39,6 +35,7 @@ export const Products = () => {
             </Link>
           );
         })}
+<<<<<<< HEAD
       </div>
       {/* responsive */}
       <div className="card-mb">
@@ -63,6 +60,8 @@ export const Products = () => {
             </Link>
           );
         })}
+=======
+>>>>>>> 1aad77bd227210339c0acdda604be3fa2a8cc70a
       </div>
     </div>
   );

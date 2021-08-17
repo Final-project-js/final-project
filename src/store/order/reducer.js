@@ -9,8 +9,7 @@ const initialState = {
 };
 
 export const orderReducer = (state = localStorages || initialState, action) => {
-  console.log(action);
-
+  console.log(action)
   switch (action.type) {
     case ADD_ORDER:
       let arr = [...state.orders];
@@ -24,6 +23,7 @@ export const orderReducer = (state = localStorages || initialState, action) => {
           orders: [...state.orders, action.obj],
           totalCount: state.totalCount + 1,
           totalPrice: state.totalPrice + action.obj.price,
+          localStorages: state.localStorages + action.obj.price
         };
       } else {
         return {
