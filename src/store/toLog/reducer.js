@@ -1,4 +1,5 @@
 import { ADD_USER, LOGIN_USER } from "./action";
+import { ADD_ORDER, DELETE_ORDER, DELETE_ORDER1 } from "./action.js";
 
 
 const local = JSON.parse(localStorage.getItem('users'))
@@ -14,6 +15,7 @@ const initialState = {
 				userPassword: '',
 				id: '',
 				photo: '',
+				products: []
 		  },
 	succes: false,
 }

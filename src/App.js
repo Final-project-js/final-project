@@ -9,7 +9,8 @@ import { Box } from "./components/Box";
 import { All } from "./All";
 import { Cart } from "./components/Cart";
 import Pay from "./components/Pay";
-import { Login } from "./components/Login";
+import { SignUp } from "./components/signUp";
+import {Login} from './components/Login'
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path="/checkout" component={Pay} />
           <Route path="/cart" component={Cart} />
           <Route path="/product" component={Box} />
-          <Route path='/login' component={Login}/>
+          <Route path='/signUp' component={SignUp}/>
+          <Route path='/logIn' component={Login}/>
           <Route path="/" component={All} />
         </Switch>
         <Footer />

@@ -13,13 +13,13 @@ const Pay = (props) => {
   const PayAlert = () => {
     // Swal.fire({
     //     title: 'PayMent',
-    //     text:'Thank you for shpping,come again',
+    //     text:'Thank you for shopping,come again',
     //     icon:'success',
     //     button:'Aceptar'
     // })
     alert(`You paid  ${totalPrice} $ , Thank you for shoping,come again`);
 
-    //   Swal.fire('Any fool can use a computer')
+    // Swal.fire('Any fool can use a computer')
   };
   return (
     <div className="container">
