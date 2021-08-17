@@ -6,7 +6,6 @@ import img1 from "./images/basket.svg";
 import { CheckCircleOutlined } from "@ant-design/icons";
 import { Tooltip, Button } from "antd";
 
-
 import "./Header.less";
 
 export const Header = () => {
@@ -45,12 +44,7 @@ export const Header = () => {
       </div>
       <div>
         <div className="login">
-          <Link to='/signUp'>
-            <Button type="text" style={{ marginRight: 5 }}>
-              Sing up
-            </Button>
-          </Link >
-          <Link to='/login'>
+          <Link to="/login">
             <Button type="text" style={{ marginRight: 5 }}>
               Login in
             </Button>
