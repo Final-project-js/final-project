@@ -6,7 +6,7 @@ const Checkout = () => {
   const totalPrice = useSelector((state) => state.orderReducer.totalPrice);
   const totalCount = useSelector((state) => state.orderReducer.totalCount);
   return (
-    <div className='pay-main'>
+    <div>
       <div className="col-3 summary-col">
         <div className="summary">
           <div className="summary__heading">Summary</div>

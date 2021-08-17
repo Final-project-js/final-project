@@ -7,6 +7,7 @@ import { CheckCircleOutlined } from "@ant-design/icons";
 import { Tooltip, Button } from "antd";
 
 import "./Header.less";
+import "./Hres.less";
 
 export const Header = () => {
   const totalCount = useSelector((state) => state.orderReducer.totalCount);

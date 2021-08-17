@@ -16,7 +16,7 @@ export const SearchPart = () => {
         />
       </div>
       <div className="mbLogo">
-        <img src={logoMb} alt="logomb" style={{ width: 300, height: 120 }} />
+        <img src={logoMb} alt="logomb" style={{ width: 300, height: 150 }} />
       </div>
     </div>
   );
