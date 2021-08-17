@@ -8,7 +8,7 @@ const initialState = {
   totalPrice: 0,
 };
 
-export const orderReducer = (state = localStorages || initialState, action) => {
+export const orderReducer = (state = initialState || localStorages , action) => {
   console.log(action)
   switch (action.type) {
     case ADD_ORDER:
@@ -42,7 +42,7 @@ export const orderReducer = (state = localStorages || initialState, action) => {
       let is_ch1 = state.orders.findIndex((item) => {
         return item.title === action.obj.title;
       });
-      if (action.obj.count !== 1) {
+      if (action.obj.count !== 1  ) {
         return {
           ...state,
           orders: state.orders.map((el, id) => {
