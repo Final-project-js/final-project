@@ -8,7 +8,7 @@ const initialState = {
   totalPrice: 0,
 };
 
-export const orderReducer = (state = localStorages || initialState, action) => {
+export const orderReducer = (state = initialState ?localStorages :initialState , action) => {
   console.log(action)
   switch (action.type) {
     case ADD_ORDER:
