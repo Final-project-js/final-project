@@ -35,7 +35,6 @@ export const Products = () => {
             </Link>
           );
         })}
-<<<<<<< HEAD
       </div>
       {/* responsive */}
       <div className="card-mb">
@@ -60,8 +59,6 @@ export const Products = () => {
             </Link>
           );
         })}
-=======
->>>>>>> 1aad77bd227210339c0acdda604be3fa2a8cc70a
       </div>
     </div>
   );

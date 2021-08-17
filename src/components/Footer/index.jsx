@@ -17,8 +17,8 @@ import apple from "../../assets/img-footer/apple.png";
 
 export const Footer = () => {
   return (
-    <footer className="footer-section">
-      <div className="footer-section-container">
+    <footer className="footer-section-container">
+      <div className="footer-card">
         <div className="f-text">
           <p className="footer-text1 ">
             A baby is the light of a mother's eyes and we at Mumzworld
