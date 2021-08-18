@@ -56,24 +56,28 @@ const Pay = (props) => {
                 <div className="row">
                   <div className="col-xs-7 col-md-7">
                     <div className="form-group">
-                      <label for="expityMonth">EXPIRY DATE</label>
-                      <div className="col-xs-6 col-lg-6 pl-ziro">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="expityMonth"
-                          placeholder="MM"
-                          required
-                        />
-                      </div>
-                      <div className="col-xs-6 col-lg-6 pl-ziro">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="expityYear"
-                          placeholder="YY"
-                          required
-                        />
+                      <label for="expityMonth" style={{ marginBottom: "5px" }}>
+                        EXPIRY DATE
+                      </label>
+                      <div style={{ display: "flex" }}>
+                        <div className="col-xs-6 col-lg-6 pl-ziro">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="expityMonth"
+                            placeholder="MM"
+                            required
+                          />
+                        </div>
+                        <div className="col-xs-6 col-lg-6 pl-ziro">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="expityYear"
+                            placeholder="YY"
+                            required
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>

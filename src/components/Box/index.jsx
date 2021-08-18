@@ -41,14 +41,22 @@ export const Box = () => {
             <Button className="button">Go Back</Button>
           </Link>
           <Link to="/cart">
-            <Button className="button">Add to Cart</Button>
+            <Button className="button" style={{ marginLeft: "65px" }}>
+              Add to Cart
+            </Button>
           </Link>
         </div>
       </div>
 
       {/* Responsive */}
       <div className="boxMb">
-        <h4 style={{ marginLeft: "30px", paddingBottom: "15px" }}>
+        <h4
+          style={{
+            marginLeft: "30px",
+            marginTop: "15px",
+            paddingBottom: "10px",
+          }}
+        >
           Your orders
         </h4>
         {orders.map((el, id) => {

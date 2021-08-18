@@ -72,6 +72,67 @@ export const Header = () => {
           </span>
         </div>
       </div>
+
+      {/* responsive */}
+      <div className="md-format">
+        <Tooltip title="For above 999 som in Kyrgyzstan">
+          <div className="delivery-md">
+            <img
+              src={img}
+              alt="delivery icon"
+              style={{
+                width: "25px",
+                height: "20px",
+                marginLeft: "25px",
+                marginRight: "5px",
+                marginTop: "17px",
+              }}
+            />
+            <h4 style={{ marginTop: "25px" }}>Free delivery</h4>
+          </div>
+        </Tooltip>
+        {/* <Tooltip title="The Best prices in the town">
+          <div className="price">
+            <CheckCircleOutlined
+              style={{
+                marginLeft: "10px",
+                marginRight: "5px",
+                fontSize: "150%",
+              }}
+            />
+            <h3>Best Prices Everyday</h3>
+          </div>
+        </Tooltip> */}
+      </div>
+      <div>
+        <div className="login-mb">
+          <Link to="/login">
+            <Button type="text" style={{ marginRight: 5 }} className="mb-btn">
+              LoginIn
+            </Button>
+          </Link>
+          <Link to="/signUp">
+            <Button type="text" style={{ marginRight: 15 }} className="mb-btn">
+              SignUp
+            </Button>
+          </Link>
+          <span style={{ marginTop: "5px", marginLeft: "10px" }}>
+            {totalCount}
+            <Link to="/cart">
+              <img
+                src={img1}
+                alt="basket"
+                style={{
+                  width: "25px",
+                  height: "20px",
+                  marginBottom: "5px",
+                  marginRight: "15px",
+                }}
+              ></img>
+            </Link>
+          </span>
+        </div>
+      </div>
     </header>
   );
 };
