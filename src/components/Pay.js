@@ -1,5 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Checkout.css";
+import { Alert, Button, notification } from "antd";
+import { SmileOutlined } from "@ant-design/icons";
 import { useSelector } from "react-redux";
 import Swal from "sweetalert2";
 
@@ -16,7 +19,7 @@ const Pay = (props) => {
     // })
     alert(`You paid  ${totalPrice} $ , Thank you for shoping,come again`);
 
-      // Swal.fire('Any fool can use a computer')
+    // Swal.fire('Any fool can use a computer')
   };
   return (
     <div className="container">
@@ -53,24 +56,28 @@ const Pay = (props) => {
                 <div className="row">
                   <div className="col-xs-7 col-md-7">
                     <div className="form-group">
-                      <label for="expityMonth">EXPIRY DATE</label>
-                      <div className="col-xs-6 col-lg-6 pl-ziro">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="expityMonth"
-                          placeholder="MM"
-                          required
-                        />
-                      </div>
-                      <div className="col-xs-6 col-lg-6 pl-ziro">
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="expityYear"
-                          placeholder="YY"
-                          required
-                        />
+                      <label for="expityMonth" style={{ marginBottom: "5px" }}>
+                        EXPIRY DATE
+                      </label>
+                      <div style={{ display: "flex" }}>
+                        <div className="col-xs-6 col-lg-6 pl-ziro">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="expityMonth"
+                            placeholder="MM"
+                            required
+                          />
+                        </div>
+                        <div className="col-xs-6 col-lg-6 pl-ziro">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="expityYear"
+                            placeholder="YY"
+                            required
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -99,11 +106,24 @@ const Pay = (props) => {
                   <span className="glyphicon glyphicon-usd"></span>
                   {totalPrice}
                 </span>{" "}
+                {/* <Alert
+                  message="Success Tips"
+                  description="Detailed description and advice about successful copywriting."
+                  type="success"
+                  showIcon
+                /> */}
                 Final Payment
               </a>
             </li>
           </ul>
-          <br />
+          {/* <br />
+          <button>dfg</button> */}
+          {/* <Link to="/">
+            <Button type="primary" onClick={openNotification}>
+              Pay
+            </Button>
+            , mountNode,
+          </Link> */}
         </div>
       </div>
     </div>
