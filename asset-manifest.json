@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/final-project/static/css/main.43bfeaff.chunk.css",
+    "main.js": "/final-project/static/js/main.0c6cd338.chunk.js",
+    "main.js.map": "/final-project/static/js/main.0c6cd338.chunk.js.map",
+    "runtime-main.js": "/final-project/static/js/runtime-main.90cbd019.js",
+    "runtime-main.js.map": "/final-project/static/js/runtime-main.90cbd019.js.map",
+    "static/js/2.c32601cb.chunk.js": "/final-project/static/js/2.c32601cb.chunk.js",
+    "static/js/2.c32601cb.chunk.js.map": "/final-project/static/js/2.c32601cb.chunk.js.map",
+    "index.html": "/final-project/index.html",
+    "static/css/main.43bfeaff.chunk.css.map": "/final-project/static/css/main.43bfeaff.chunk.css.map",
+    "static/js/2.c32601cb.chunk.js.LICENSE.txt": "/final-project/static/js/2.c32601cb.chunk.js.LICENSE.txt",
+    "static/media/babyclothes1.30359eef.jpg": "/final-project/static/media/babyclothes1.30359eef.jpg",
+    "static/media/babyclothes2.5cbfd260.jpg": "/final-project/static/media/babyclothes2.5cbfd260.jpg",
+    "static/media/babyclothes3.5f9e855c.jpg": "/final-project/static/media/babyclothes3.5f9e855c.jpg",
+    "static/media/babyclothes4.dfd76f7e.jpg": "/final-project/static/media/babyclothes4.dfd76f7e.jpg",
+    "static/media/babyclothes5.38537831.jpg": "/final-project/static/media/babyclothes5.38537831.jpg",
+    "static/media/babyclothes6.d36ca9b0.jpg": "/final-project/static/media/babyclothes6.d36ca9b0.jpg",
+    "static/media/babytoy1.7f4a3b79.jpg": "/final-project/static/media/babytoy1.7f4a3b79.jpg",
+    "static/media/babytoy2.adcc47a5.jpg": "/final-project/static/media/babytoy2.adcc47a5.jpg",
+    "static/media/babytoy3.1bc654e5.jpg": "/final-project/static/media/babytoy3.1bc654e5.jpg",
+    "static/media/babytoy4.26501291.jpg": "/final-project/static/media/babytoy4.26501291.jpg",
+    "static/media/babytoy5.a712194c.jpg": "/final-project/static/media/babytoy5.a712194c.jpg",
+    "static/media/babytoy6.6f591b09.jpg": "/final-project/static/media/babytoy6.6f591b09.jpg",
+    "static/media/basket.f7c97259.svg": "/final-project/static/media/basket.f7c97259.svg",
+    "static/media/delivery.fa648bd0.svg": "/final-project/static/media/delivery.fa648bd0.svg",
+    "static/media/diapers1.d44b8f9b.jpg": "/final-project/static/media/diapers1.d44b8f9b.jpg",
+    "static/media/diapers2.91677630.jpg": "/final-project/static/media/diapers2.91677630.jpg",
+    "static/media/kids.61e7bd77.svg": "/final-project/static/media/kids.61e7bd77.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.90cbd019.js",
+    "static/js/2.c32601cb.chunk.js",
+    "static/css/main.43bfeaff.chunk.css",
+    "static/js/main.0c6cd338.chunk.js"
+  ]
+}
