@@ -55,7 +55,7 @@ export const Header = () => {
               Sign up
             </Button>
           </Link>
-          <span>
+          <span style={{display: 'flex', alignItems: "center"}}>
             {totalCount}
             <Link to="/cart">
               <img
